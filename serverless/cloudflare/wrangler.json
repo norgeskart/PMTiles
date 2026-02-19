@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tiles",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-09-02",
+  "minify": false,
+  "routes": [
+    {
+      "pattern": "tiles.norgeskart.net",
+      "zone_name": "norgeskart.net",
+      "custom_domain": true
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "topo-legacy-z14"
+    }
+  ],
+  "vars": {
+    "ALLOWED_ORIGINS": "*"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true
+    }
+  }
+}
