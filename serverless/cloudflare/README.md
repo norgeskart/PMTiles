@@ -1,5 +1,9 @@
 # Protomaps on Cloudflare
 
+> **Deprecated for Norgeskart.** The `tiles` Worker deployed from this folder no longer serves
+> tiles.norgeskart.net. Since 2026-10-29 that domain is served by the `norgeskart-tiles` Worker
+> (github.com/norgeskart/tiles), with the same tile URLs. Don't redeploy this one.
+
 See installation and configuration instructions at [Protomaps Docs: Deploy on Cloudflare](https://docs.protomaps.com/deploy/cloudflare)
 
 ## Development
